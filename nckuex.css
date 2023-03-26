@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "Noto Sans TC";
+	src: url(./fonts/NOTOSANSMONOCJKTC-BOLD.OTF);
+ }
+
+html{
+background-color: black;
+}
+
+ul{
+    
+}
+
+ul a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 6em; 
+}
+ul a span{
+    font-family: "Noto Sans TC";
+    font-size: 10px;
+}
