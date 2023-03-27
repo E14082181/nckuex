@@ -1,6 +1,16 @@
 @font-face {
-	font-family: "Noto";
+	font-family: "Source Han Sans SC Regular";
 	src: url(./fonts/NotoSansTC-Regular.otf);
+ }
+
+ @font-face {
+	font-family: "Source Han Sans SC Thin";
+	src: url(./fonts/NotoSansTC-Thin.otf) ;
+ }
+
+ @font-face {
+	font-family: "Source Han Sans SC Light";
+	src: url(./fonts/NotoSansTC-Light.otf);
  }
 
 html{
@@ -9,20 +19,58 @@ html{
 
 ul{
     position: absolute;
-    top: 20vh;
+    top: 12vw;
     /* top: 15px; */
     left: 50%;
-    transform: translateX(-60%);
+    transform: translateX(-50%);
+    list-style: none;
+    margin: 0;
+    display: flex;
+    width: 40vw;
+    height: 5vw;
 }
-
+ul li{
+    margin-left: 3em; 
+}
 ul a {
     text-decoration: none;
     color: aliceblue;
-    margin-left: 3em; 
+    /* margin-left: 3em;  */
 }
 ul a span{
-    font-family: "Noto";
+    font-family: "Source Han Sans SC Light", sans-serif;
     font-size: 1.5vw;
+}
+
+#首頁::after, #ABOUTUS::after, #資源區::after, #PTT::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 6.5vh;
+    border-radius: 10px;
+    background-color:aliceblue;
+    margin-top: 2px;
+}
+#ABOUTUS::after{
+    height: 2px;
+    width: 15.75vh;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+#資源區::after{
+    height: 2px;
+    width: 10.1vh;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+#PTT::after{
+    height: 2px;
+    width: 5.9vh;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+#ABOUTUS:hover::after, #資源區:hover::after, #PTT:hover::after{
+    transform: scaleX(1);
 }
 
 header img{
@@ -49,12 +97,12 @@ img {
     z-index: -2;
 }
 
-h1{
+section span{
     position: absolute;
-    top: 160vh;
+    top: 74vw;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "Noto";
+    font-family: "Source Han Sans SC Thin", sans-serif;
     color: aliceblue;
     font-size:4vw;
 }
@@ -75,7 +123,7 @@ main{
     justify-content: flex-start;
     align-content: center;
     margin-top: 175vh;
-    height: 290vh;
+    height: 285vh;
 }
 
 main img{
@@ -85,10 +133,9 @@ main img{
 
 #footer{
     position: absolute;
-    /* top: 27vh' */
     left: 50%;
     transform: translateX(-50%);
-    /* height: 30vw; */
+    height: 7vw;
     width: 98.7vw;
     z-index: -2;
 }
