@@ -27,18 +27,18 @@ header img{
 }
 
 ul{
-    width: 40vw;
+    /* width: 40vw; */
     height: 5vw;
     position: absolute;
     top: 12vw;
     /* top: 15px; */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
     list-style: none;
     margin: 0;
     display: flex;
 }
-ul li{
+#ABOUTUS, #資源區, #PTT{
     margin-left: 3em; 
 }
 ul a {
