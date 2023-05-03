@@ -33,12 +33,12 @@ ul{
     top: 12vw;
     /* top: 15px; */
     left: 50%;
-    transform: translateX(-55%);
+    transform: translateX(-60%);
     list-style: none;
     margin: 0;
     display: flex;
 }
-#ABOUTUS, #資源區, #PTT{
+ul li{
     margin-left: 3em; 
 }
 ul a {
