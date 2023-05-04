@@ -13,130 +13,106 @@
 	src: url(./fonts/NotoSansTC-Light.otf);
  }
 
-html{
-    background-color: black;
+ @font-face {
+	font-family: "Source Han Sans SC Bold";
+	src: url(./fonts/NotoSansTC-Bold.otf);
+ }
+
+body{
+    background-color: rgba(18, 18, 18, 1);
 }
 
-header img{
+#title h1{
+    font-family: "Source Han Sans SC Bold", sans-serif;
+    font-size: 3vw;
+    color: aliceblue;
     position: absolute;
-    top: 2vw;
-    left: 50vw;
-    transform: translateX(-50%);
-    height: 8vw;
-    width: 12vw;
+    top: 3vw;
+    left: 10vw;
 }
 
-ul{
+#info span{
+    font-family: "Source Han Sans SC Light", sans-serif;
+    font-size: 1.3vw;
+    color: aliceblue;
+}
+
+#info li{
+    margin-right: 3em; 
+}
+
+#info ul{
     /* width: 40vw; */
-    height: 5vw;
+    /* height: 5vw; */
     position: absolute;
-    top: 12vw;
+    top: 11vw;
     /* top: 15px; */
-    left: 50%;
-    transform: translateX(-60%);
-    list-style: none;
+    left: 10vw;
+    /* transform: translateX(-60%); */
+    /* list-style: none; */
     margin: 0;
     display: flex;
-}
-ul li{
-    margin-left: 3em; 
-}
-ul a {
-    text-decoration: none;
-    color: aliceblue;
-    /* margin-left: 3em;  */
-}
-ul a span{
-    font-family: "Source Han Sans SC Light", sans-serif;
-    font-size: 1.5vw;
+    padding: 0;
 }
 
-#首頁::after, #ABOUTUS::after, #資源區::after, #PTT::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 3vw;
-    border-radius: 10px;
-    background-color:aliceblue;
-    margin-top: 2px;
-}
-#ABOUTUS::after{
-    height: 2px;
-    width: 7vw;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-#資源區::after{
-    height: 2px;
-    width: 4.5vw;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-#PTT::after{
-    height: 2px;
-    width: 2.7vw;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-#ABOUTUS:hover::after, #資源區:hover::after, #PTT:hover::after{
-    transform: scaleX(1);
-}
-
-img {
+img{
     max-width: 100%;
-    max-height: 100%;
-    }
-
-#cover{
-    position: absolute;
-    top: 14vw;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 61vw;
-    width: 98.5vw;
-    z-index: -2;
-}
-
-section span{
-    position: absolute;
-    top: 74vw;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Source Han Sans SC Thin", sans-serif;
-    color: aliceblue;
-    font-size:4vw;
+    /* max-height: 100%; */
 }
 
 #line{
     position: absolute;
-    top: 79vw;
+    top: 13vw;
     left: 50%;
     transform: translateX(-50%);
-    height: 1vw;
-    width: 7vw;
+    width: 80vw;
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    margin-top: 79vw;
-    /* height: 285vh; */
-    height: 135vw;
-}
-
-main img{
-    width: 45vw;
-    margin-top: 10vh;
-}
-
-#footer{
+#file img{
+    width: 62vw;
     position: absolute;
+    top:18vw;
     left: 50%;
     transform: translateX(-50%);
-    height: 7vw;
-    width: 98.7vw;
-    z-index: -2;
 }
+
+#page{
+    color: aliceblue;
+    font-family: "Source Han Sans SC Regular", sans-serif;
+    position: absolute;
+    top:105vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#download{
+    width: 2.5vw;
+    position: absolute;
+    top:19vw;
+    right: 12vw;
+}
+
+#like{
+    width: 2.5vw;
+    position: absolute;
+    top:26vw;
+    right: 12vw;
+}
+
+#download p, #like p{
+    font-family: "Source Han Sans SC Regular", sans-serif;
+    font-size: 1vw;
+    color:aliceblue;
+    position: absolute;
+    left: 0.3vw;
+    margin: 0;
+}
+
+#quit{
+    width: 3vw;
+    position: absolute;
+    top: 5vw;
+    right: 7vw;
+}
+
+
